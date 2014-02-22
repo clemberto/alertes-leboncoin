@@ -95,7 +95,7 @@ function lbc(sendMail){
         }
         else if (date.indexOf("Hier") >= 0) {
           date_annonce.setDate(today.getDate() - 1);
-          debug_("annonce de hier");
+          //debug_("annonce de hier");
         }
         else {
           date_annonce.setFullYear = today.getFullYear;
@@ -130,7 +130,7 @@ function lbc(sendMail){
         //debug_("title : " + title + " \n Conditions boucle : balise <a> : " + data.indexOf("<a") + " stop : " + stop);        
 
         // Eliminates current <a> tag (treated)
-        var data = data.substring(data.indexOf("<a",10));
+        data = data.substring(data.indexOf("<a",10));
               
       }// HTML <a> tags loop       
       
